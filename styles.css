@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&display=swap');
+
+body {
+    font-family: "Bangers", serif;
+}
+
+dialog[open] {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: ". cerrar ."
+        "pokemon1 pokemon2 pokemon3"
+        "pokemon4 pokemon5 pokemon6";
+
+}
+
+dialog[open] div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon1 {
+    grid-area: pokemon1;
+}
+
+.pokemon2 {
+    grid-area: pokemon2;
+}
+
+.pokemon3 {
+    grid-area: pokemon3;
+}
+
+.pokemon4 {
+    grid-area: pokemon4;
+}
+
+.pokemon5 {
+    grid-area: pokemon5;
+}
+
+.pokemon6 {
+    grid-area: pokemon6;
+}
+
+.cerrar {
+    height: 20px;
+    grid-area: cerrar;
+}
